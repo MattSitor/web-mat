@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <style>
+        /* Gaya Umum Halaman */
+        body {
+            margin: auto;
+            padding: auto;
+            background-image: url('bg(mattew).jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            background: rgba(255, 255, 255, 0);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+            width: 500px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Foto Profil */
+        .image img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Judul */
+        h2 {
+            font-size: 28px;
+            color: #f3f3f3;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #f3f3f5;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Garis Horizontal */
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+
+        /* Tabel Biodata */
+        .biodata table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .biodata th, .biodata td {
+            text-align: left;
+            padding: 12px 20px;
+            font-size: 15px;
+        }
+
+        .biodata th {
+            width: 40%;
+            color: #000000;
+            font-weight: bold;
+            text-align: right;
+            background: #ffffff25;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .biodata td {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .biodata tr:hover td {
+            background-color: #f0f8ff00;
+        }
+
+        /* Efek Animasi */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Foto Profil -->
+        <div class="image">
+            <img src="matthew.jpeg" alt="Foto Profil">
+        </div>
+
+        <!-- Judul -->
+        <h2>Biodata Diri</h2>
+        
+        <!-- Garis Pemisah -->
+        <hr>
+
+        <!-- Tabel Biodata -->
+        <div class="biodata">
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Matthew Ricy Marito Sitorus</td>
+                </tr>
+                <tr>
+                    <th>Tanggal Lahir</th>
+                    <td>5 September 2002</td>
+                </tr>
+                <tr>
+                    <th>Jenis Kelamin</th>
+                    <td>Laki-laki</td>
+                </tr>
+                <tr>
+                    <th>Alamat</th>
+                    <td>Jalan Titpapan No. 171</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>matthewricy@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Nomor Telepon</th>
+                    <td>+62 812 3456 7890</td>
+                </tr>
+                <tr>
+                    <th>Hobi</th>
+                    <td>Game</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
